@@ -12,25 +12,53 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Your Webpage</title>
+<title>National Portal</title>
 
 <style>
+
+    /* Add a black background color to the top navigation */
+.topnav {
+  background-color: #015296;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #e4e4e4;
+  color: rgb(46, 46, 46);
+}
 
 body {
 
 margin: 0;
 
-font-family: Arial, sans-serif;
+font-family: Public Sans,sans-serif;
 
 
 
 }
 
 header {
-
+    font-family: Public Sans,sans-serif;
 text-align: center;
 
-color: white;
+color: rgb(0, 0, 0);
 
 padding: 0px;
 
@@ -38,7 +66,7 @@ padding: 0px;
 
 .ssop{
 
-background: #19398a;
+background: #ffffff;
 
 
 
@@ -47,12 +75,12 @@ background: #19398a;
 main {
 
 
-
+    font-family: Public Sans,sans-serif;
 text-align: left;
 
 padding: 30px;
 
-color: white;
+color: rgb(0, 0, 0);
 
 }
 
@@ -78,7 +106,7 @@ padding: 5px;
 
 #downloadButton {
 
-background-color: #e51f0b;
+background-color: #015296;
 
 color: white;
 
@@ -108,6 +136,100 @@ display: block;
 
 
 
+}
+/* jadhfjhsdjf*/
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+/* ----------------------------------- */
+.card {
+    font-family: Public Sans,sans-serif;
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+.container {
+  padding: 2px 16px;
+}
+
+.bcard {
+    padding: 20px 16px;
+    color: #ddd;
+    font-size:small;
+    font-family: Public Sans,sans-serif;
+    background: #015296;
+}
+.b2card {
+    padding: 20px 16px;
+    color: #ddd;
+    font-size:small;
+    font-family: Public Sans,sans-serif;
+    background: #01355f;
 }
 
 </style>
@@ -150,16 +272,41 @@ var m = new Date().getMinutes();
 
 <body class="ssop">
 
-<div>
+    
 
 
 
 <header>
+    <img id="logso" height="50" src="https://ammoniaenergy.org/wp-content/uploads/2023/02/MNRE_India.png"/>
+    <img id="logso" width="70%" src="https://www.pmsuryaghar.gov.in/assets/Pm-Suryaghar-Logo-248f191d.png"/>
 
-<img id="logo" src="https://i.postimg.cc/wjbJL0d9/unnamed.png">
+    <div class="topnav">
+        <a href="#news">Home</a>
+        <a class="active" href="#home">Register</a>
+        <a href="#news">News</a>
+        <a href="#contact">Vendors</a>
+        <a href="#about">About</a>
+      </div> 
+<div>
+    <div class="slideshow-container">
 
-
-
+        <div class="mySlides fade">
+          <div class="numbertext"></div>
+          <img src="https://i.postimg.cc/wjbJL0d9/unnamed.png" style="width:100%">
+          <div class="text"></div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext"></div>
+          <img src="https://i.postimg.cc/x19ZsMQk/img2-1.png" style="width:100%">
+          <div class="text"></div>
+        </div>
+        </div>
+        <div style="display: none;">
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+          </div>
 
 
 </header>
@@ -168,37 +315,49 @@ var m = new Date().getMinutes();
 
 <main>
 
-<center><h2>Pradhan Mantri Muft Bijli Yojana</h2></center><br>
 
-<p><h4>
+    <div class="card">
+        <div class="container">
+          <h4><b>Infromation: </b></h4>
+          <p>	● Registration process for PMMBY is started.<br>
 
-		- Registration for PMMBY is started.<br>
-
-		- Get 300-units free every month.<br>
-
-		- Only 1-Crore users are eligible.
-
-			
-
-</p>- Download PMMBS app for registration.</h4></p>
-
-
-
-
-
-<br><br>
-
+            ● Get 300 units of electricity free every month.<br>
+            ● Rented house / apartment supported.<br>
+    
+            ● Only 1-Crore users are eligible. <br> <br>
+            ● Download PMMBS app for Registration.</p>
+        </div>
+        <br>
+<center>
 <button onClick="done()" id="downloadButton">Download APK</button>
-
+</center> <br>
+      </div> 
+      <br><br>
+ 
 </main>
 
 </div>
+<center>
+    <div class="bcard">
+      SiteMap   |
+      Terms & Conditions    |
+      Copyright Policy  |
+      Privacy Policy    |
+      Privacy Policy for Mobile |
+      Hyperlinking Policy
+    </div>
+  </center>
+  <center>
+    <div class="b2card">
+        Copyright @2024 <br> <br>
 
+        Website Content Managed by <b>Ministry of New and Renewable Energy, Government of India</b>
+        <br><br>
+        Last Updated: November 15, 2024
+    </div>
+  </center>
 <footer>
 
-<p style="color:white;">
-
-Copyright MNRE 2024 </p>
 
 </footer>
 
@@ -217,7 +376,27 @@ src="https://c.statcounter.com/13004805/0/080186cb/1/"
 alt="Web Analytics"
 referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
 
-
+<script type="text/javascript">
+    let slideIndex = 0;
+    showSlides();
+    
+    function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 3000); // Change image every 2 seconds
+    }
+    </script>
 </body>
 
 
